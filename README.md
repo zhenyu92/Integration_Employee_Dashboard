@@ -1,4 +1,4 @@
-# A study on a company employee database with the Integration of SQL & Tableau 2019.
+# A Study on a Company Employee Database with the Integration of SQL & Tableau 2019.
 This project is a part of the learning milestone of a Udemy course delivered by [365 Careers](https://www.udemy.com/the-business-intelligence-analyst-course-2018/). 
 
 ### Author
