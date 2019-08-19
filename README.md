@@ -27,11 +27,14 @@ We are required to retrive information from the database and present the followi
 
 ### Environment Prerequisites
 `MySQL` for database query
+
 `Tableau 2019` for data visualization
 
 ### Instructions
 1. Downloaded the [database](https://github.com/zhenyu92/Tableau-SQL_Employee_Dashboard/blob/master/employees_mod.zip).
-2. Run and execute the `SQL` file in MySQL to build the database.
+
+2. Run and execute the `SQL` file in `MySQL` to build the database.
+
 3. For Task 1, run and execute the [SQL Script](https://github.com/zhenyu92/Tableau-SQL_Employee_Dashboard/blob/master/Task_1.sql).
     ```
     SELECT 
@@ -50,7 +53,9 @@ We are required to retrive information from the database and present the followi
     
     ORDER BY 1;
     ```
+    
 4. Export the query of Task 1 as [CSV File](https://github.com/zhenyu92/Tableau-SQL_Employee_Dashboard/blob/master/Task_1.csv)
+
 5. For Task 2, run and execute the [SQL Script](https://github.com/zhenyu92/Tableau-SQL_Employee_Dashboard/blob/master/Task_2.sql).
     ```
     SELECT 
@@ -81,7 +86,9 @@ We are required to retrive information from the database and present the followi
             
       ORDER BY dm.emp_no, calendar_year;
     ```
+
 6. Export the query of Task 2 as [CSV File](https://github.com/zhenyu92/Tableau-SQL_Employee_Dashboard/blob/master/Task_2.csv)
+
 7. For Task 3, run and execute the [SQL Script](https://github.com/zhenyu92/Tableau-SQL_Employee_Dashboard/blob/master/Task_3.sql).
     ```
     SELECT 
@@ -97,14 +104,16 @@ We are required to retrive information from the database and present the followi
     t_dept_emp de ON de.emp_no = e.emp_no
         JOIN
     t_departments d ON d.dept_no = de.dept_no
-    
-  GROUP BY d.dept_no , e.gender , calendar_year
+   
+    GROUP BY d.dept_no , e.gender , calendar_year
 
-  HAVING calendar_year <= 2002
+    HAVING calendar_year <= 2002
 
-  ORDER BY d.dept_no;
+    ORDER BY d.dept_no;
     ```
-8. Export the query of Task 3 as [CSV File](https://github.com/zhenyu92/Tableau-SQL_Employee_Dashboard/blob/master/Task_3.csv)
+
+8. Export the query of Task 3 as [CSV File](https://github.com/zhenyu92/Tableau-SQL_Employee_Dashboard/blob/master/Task_3.csv).
+
 9. For Task 4, run and execute the [SQL Script](https://github.com/zhenyu92/Tableau-SQL_Employee_Dashboard/blob/master/Task_4.sql).
     ```
     DROP PROCEDURE IF EXISTS filter_salary;
@@ -134,7 +143,9 @@ We are required to retrive information from the database and present the followi
     DELIMITER ;
     CALL filter_salary(50000, 90000);
     ```
+
 10. Export the query of Task 4 as [CSV File](https://github.com/zhenyu92/Tableau-SQL_Employee_Dashboard/blob/master/Task_4.csv)
+
 11. Import and tuning in Tableau 2019.
 - Task 1
 ![alt text](https://github.com/zhenyu92/Tableau-SQL_Employee_Dashboard/blob/master/Task_1.JPG "Task 1")
